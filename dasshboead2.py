@@ -15,6 +15,7 @@ def load_data():
     
     return df
 
+
 df = load_data()
 
 # filtre de la sidebar
