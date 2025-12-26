@@ -10,7 +10,10 @@ st.title("Analyse de Performance Superstore")
 @st.cache_data
 def load_data():
     
-    df = pd.read_csv(r"C:\Users\dell\Desktop\access2019\Sample - Superstore_CLEAN.csv", encoding="Latin-1")
+    #df = pd.read_csv(r"C:\Users\dell\Desktop\access2019\Sample - Superstore_CLEAN.csv", encoding="Latin-1")
+
+    df = pd.read_csv("Sample - Superstore_CLEAN.csv", encoding="Latin-1")
+
     df['Order Date'] = pd.to_datetime(df['Order Date'])
     
     return df
